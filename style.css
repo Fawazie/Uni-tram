@@ -7,7 +7,7 @@
     min-width: 600px;
     min-height: auto;
     display: flex;
-    position: relative;
+
     margin: auto;
     top: 35%;
     justify-content: center;
@@ -16,5 +16,12 @@
 
 #map {
     height: 100%;
-    width: 100%;
+
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
