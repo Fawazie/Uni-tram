@@ -1,9 +1,24 @@
 function initMap() {
     // Styles a map in night mode.
+
+    const input = document.getElementById("pac-input");
+
     const map = new google.maps.Map(document.getElementById("map"), {
         center: { lat: 30.095084303212673, lng: -95.99079343452911 },
         zoom: 15,
         minZoom: 10,
+        fullscreenControl: false,
+        mapTypeControl: false,
+
+        zoomControl: true,
+        zoomControlOptions: {
+            position: google.maps.ControlPosition.LEFT_BOTTOM,
+        },
+        streetViewControl: true,
+        streetViewControlOptions: {
+            position: google.maps.ControlPosition.LEFT_BOTTOM,
+
+        },
         styles: [
             {
                 elementType: "geometry",
